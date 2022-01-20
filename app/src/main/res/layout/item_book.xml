@@ -58,7 +58,6 @@
                         android:layout_height="match_parent"
                         android:imageUrl="@{book.image}"
                         android:scaleType="centerInside"
-                        android:layout_margin="@dimen/_5sdp"
                         />
                     
                     <com.facebook.shimmer.ShimmerFrameLayout

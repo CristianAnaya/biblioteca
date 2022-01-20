@@ -118,7 +118,6 @@ public class BookDetailsActivity extends AppCompatActivity {
         activityBookDetailsBinding.viewDivider2.setVisibility(View.VISIBLE);
         activityBookDetailsBinding.layoutMisc.setVisibility(View.VISIBLE);
         activityBookDetailsBinding.btnWebSite.setVisibility(View.VISIBLE);
-        activityBookDetailsBinding.btnPdf.setVisibility(View.VISIBLE);
     }
 
 

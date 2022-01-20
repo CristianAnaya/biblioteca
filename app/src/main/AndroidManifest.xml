@@ -18,7 +18,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".ui.ListActivity"></activity>
         <activity android:name=".ui.activity.BookDetailsActivity" />
         <activity android:name=".ui.activity.BookListActivity">
 

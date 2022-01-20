@@ -365,7 +365,7 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnWebSite"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_8sdp"
                     android:includeFontPadding="false"
@@ -378,31 +378,10 @@
                     app:cornerRadius="@dimen/_6sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/btnPdf"
                     app:layout_constraintTop_toBottomOf="@id/viewDivider2"
                     />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnPdf"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_4sdp"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:textColor="@color/white"
-                    android:includeFontPadding="false"
-                    android:text="@string/str_pdf"
-                    android:textSize="@dimen/_12ssp"
-                    android:visibility="gone"
-                    android:backgroundTint="@color/textExaminar"
-                    app:cornerRadius="@dimen/_6sdp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/btnWebSite"
-                    app:layout_constraintTop_toBottomOf="@id/viewDivider2"
-                    />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
 
