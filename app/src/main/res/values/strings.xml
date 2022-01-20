@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Book App</string>
+    <string name="str_welcome_to_book_app">Welcome to Book App</string>
+    <string name="str_read_more">Read More</string>
+    <string name="str_read_less">Read Less</string>
+    <string name="str_u2022">•</string>
+    <string name="str_website">Website</string>
+    <string name="str_pdf">Pdf</string>
+</resources>

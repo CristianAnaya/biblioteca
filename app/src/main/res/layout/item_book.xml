@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.cranaya.biblioteca.model.BookModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/container"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="0dp"
+        app:strokeColor="#F1F1F1"
+        app:strokeWidth="1dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_9sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                >
+                
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/imgBookLayout"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@drawable/ic_photo"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#F1F1F1"
+                    app:strokeWidth="0.5dp"
+                    >
+                    
+                    <ImageView
+                        android:id="@+id/imgBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:imageUrl="@{book.image}"
+                        android:scaleType="centerInside"
+                        android:layout_margin="@dimen/_5sdp"
+                        />
+                    
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/progress"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_duration="800">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/gray_100"/>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgBookLayout">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@{book.title}"
+                        android:textColor="@color/gray_500"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginStart="@dimen/_16sdp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        >
+                        <TextView
+                            android:id="@+id/txtSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{book.subtitle}"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="@color/gray_400"
+                            android:fontFamily="@font/poppins_bold"
+                            android:singleLine="false"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/txtPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="@color/green_300"
+                            android:text='@{book.price}'
+                            android:background="@drawable/bg_job_type"
+                            android:fontFamily="@font/poppins_bold"
+                            android:singleLine="true"
+                            android:paddingStart="@dimen/_6sdp"
+                            android:paddingEnd="@dimen/_6sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

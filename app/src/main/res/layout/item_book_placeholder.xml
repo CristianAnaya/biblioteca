@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <View
+            android:id="@+id/icon"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/bg_photo_item"/>
+
+
+        <View
+            android:id="@+id/title"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_toEndOf="@+id/icon"
+            android:background="@drawable/bg_strip_round"/>
+
+        <View
+            android:id="@+id/subtitle"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_130sdp"
+            android:layout_toEndOf="@+id/icon"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_strip_round"/>
+
+        <View
+            android:id="@+id/price"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_130sdp"
+            android:layout_toEndOf="@+id/icon"
+            android:layout_below="@+id/subtitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_strip_round"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
